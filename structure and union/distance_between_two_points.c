@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-struct point // ±¸Á¶Ã¼ pointÀÇ Á¤ÀÇ
+struct point // êµ¬ì¡°ì²´ pointì˜ ì •ì˜
 {
 	int xpos;
 	int ypos;
@@ -13,14 +13,14 @@ int main(void)
 	double distance;
 
 	fputs("point1 pos: ", stdout);
-	scanf_s("%d %d", &pos1.xpos, &pos1.ypos);
+	scanf("%d %d", &pos1.xpos, &pos1.ypos);
 
 	fputs("point2 pos: ", stdout);
-	scanf_s("%d %d", &pos2.xpos, &pos2.ypos);
+	scanf("%d %d", &pos2.xpos, &pos2.ypos);
 
-	// µÎ Á¡ »çÀÌÀÇ °Å¸® °ø½Ä
+	// ë‘ ì  ì‚¬ì´ì˜ ê±°ë¦¬ ê³µì‹
 	distance = sqrt((double)((pos1.xpos - pos2.xpos) * (pos1.xpos - pos2.xpos) + (pos1.ypos - pos2.ypos) * (pos1.ypos - pos2.ypos)));
 
-	printf("µÎ Á¡ »çÀÌÀÇ °Å¸®´Â %gÀÔ´Ï´Ù. \n", distance);
+	printf("ë‘ ì  ì‚¬ì´ì˜ ê±°ë¦¬ëŠ” %g ì…ë‹ˆë‹¤. \n", distance);
 	return 0;
 }
