@@ -13,4 +13,5 @@ int main(void)
     ptr2++; // 8이 증가한다.
     printf("%p %p \n", ptr1, ptr2);
     return 0;
+    // type형 포인터를 대상으로 n의 크기만큼 값을 증가 및 감소 시, n x sizeof(type)의 크기만큼 주소 값이 증가 및 감소한다.
 }
